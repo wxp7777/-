@@ -41,7 +41,7 @@ jobs:
       run: chmod +x ./gradlew
 
     - name: Build with Gradle
-      run: ./gradlew assembleRelease --info --stacktrace
+      run: ./gradlew build
 
     - name: List APK files
       run: find app/build/outputs/ -type f -exec ls -lh {} \;
