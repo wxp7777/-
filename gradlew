@@ -1,4 +1,4 @@
-#!usrbinenv sh
+#!/usr/bin/env sh
 
 # Ensure we have a gradle distribution
 if [ -z $GRADLE_HOME ]; then
