@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace 'com.example.myapp' // 添加 namespace 属性
+    namespace 'com.example.UnlockToHomeApp' // 添加 namespace 属性
 
     compileSdkVersion 31
 
     defaultConfig {
-        applicationId "com.example.myapp"
+        applicationId "com.example.UnlockToHomeApp"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
