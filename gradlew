@@ -64,9 +64,10 @@ if [ "$MAX_FD" != "maximum" ] ; then
             MAX_FD="$MAX_FD_LIMIT"
         fi
     fi
-    ulimit -n $MAX_FD || die "Could not set maximum file descriptor limit: $MAX_FD"
+    # ulimit -n $MAX_FD || die "Could not set maximum file descriptor limit: $MAX_FD"
 else
-    ulimit -n unlimited || die "Could not set maximum file descriptor limit: unlimited"
+    # ulimit -n unlimited || die "Could not set maximum file descriptor limit: unlimited"
+    :
 fi
 
 # For Cygwin, ensure paths are in UNIX format before anything is touched.
