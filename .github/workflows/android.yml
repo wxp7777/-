@@ -43,8 +43,6 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
-    - name: List APK files
-      run: find app/build/outputs/ -type f -exec ls -lh {} \;
 
     - name: Upload APK
       uses: actions/upload-artifact@v2
