@@ -57,6 +57,6 @@ save () {
 APP_ARGS=$(save "$@")
 
 # Collect all arguments for the java command, following the shell quoting and argument splitting rules
-eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS -cp "$APP_BASE_NAME/gradle/wrapper/gradle-wrapper.jar" org.gradle.wrapper.GradleWrapperMain "$APP_ARGS"
+eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS -cp "$APP_BASE_NAME/gradle/wrapper/gradle-wrapper.jar"
 
 exec "$JAVACMD" "$@"
