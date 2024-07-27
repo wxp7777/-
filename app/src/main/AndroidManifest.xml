@@ -10,18 +10,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UnlockToHomeApp">
-        <receiver android:name=".UnlockReceiver">
+       <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.USER_PRESENT"/>
-            </intent-filter>
-        </receiver>
-
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".UnlockReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.unlocktohomeapp.UNLOCK_ACTION" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
